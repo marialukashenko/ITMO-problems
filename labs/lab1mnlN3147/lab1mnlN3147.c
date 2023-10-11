@@ -98,8 +98,8 @@ int main(int argc, char *argv[]) {
 
     if (check(argv)) {
         char *end;
-        unsigned long ch = strtoul(argv[1], &end, 10);
-        solve(ch);
+        unsigned long a = strtoul(argv[1], &end, 10);
+        solve(a);
     } else printf("Ошибка: '%s' не соответствует формату входных данных.", argv[1]);
 
     return EXIT_SUCCESS;
